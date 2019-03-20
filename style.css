@@ -1,0 +1,45 @@
+/* background image is in this class */
+
+/* This is my style for the resizable grid */
+#mydiv {
+    position: absolute;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid #d3d3d3;
+    cursor: move;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    padding: 10px;
+    visibility: hidden;
+    
+  }
+
+  .grid-item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+/* This is my button */
+  #btn{
+    position: absolute; top:10; left: 10; height: 40px; width: 40px; align-content: center;
+  }
+  
+  .vl {
+    border-left: 2px solid black;
+    height: 100%;
+    left: 30px;
+  }
+
+/* this is the image that im displaying */
+  img {
+    max-width:100%; max-height:100%; position: absolute;
+  }
+ 
+ /* These are the four dots on the four corners of the div */
+.resizerlb { width: 10px; height: 10px; background: black; position:absolute; left: 0; bottom: 0; cursor: sw-resize; }
+.resizerrb { width: 10px; height: 10px; background: black; position:absolute; right: 0; bottom: 0; cursor: se-resize; }
+.resizerrt { width: 10px; height: 10px; background: black; position:absolute; right: 0; top: 0; cursor: sw-resize; }
+.resizerlt { width: 10px; height: 10px; background: black; position:absolute; left: 0; top: 0; cursor: se-resize; }
